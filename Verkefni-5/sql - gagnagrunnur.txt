@@ -1,0 +1,29 @@
+create database verkefni_5
+
+CREATE TABLE myndir
+(
+    id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    skraarheiti varchar(255), 
+    myndheiti varchar(255),
+    textaalysing varchar(255)
+    User_ID int references user(id),
+);
+
+CREATE TABLE user
+(
+    id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  	nafn varchar(255),
+    netfang varchar(255)
+);
+
+INSERT INTO myndir(myndheiti,skraarheiti,textaalysing)
+VALUES
+("Kettlingur","kissa_1.jpg","Sættur Kettlingur",'1'),
+("Læða","kissa_2.jpg","Flott Læða",'2'),
+("Högni","kissa_3.jpg","Högni",'1'),
+("Kettlingar","kissa_4.jpg","Kettlingur",'2');
+
+INSERT INTO user (nafn, netfang)
+VALUES
+('Konni',"konni@tskoli.is"),
+('Hildur',"hildur@tskoli.is");
