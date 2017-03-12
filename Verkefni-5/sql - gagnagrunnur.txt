@@ -1,4 +1,11 @@
-create database verkefni_5
+create database 2811992349_gg_verkefni_5
+
+CREATE TABLE user
+(
+    id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  	nafn varchar(255),
+    netfang varchar(255)
+);
 
 CREATE TABLE myndir
 (
@@ -9,12 +16,6 @@ CREATE TABLE myndir
     User_ID int references user(id),
 );
 
-CREATE TABLE user
-(
-    id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  	nafn varchar(255),
-    netfang varchar(255)
-);
 
 INSERT INTO myndir(myndheiti,skraarheiti,textaalysing)
 VALUES
