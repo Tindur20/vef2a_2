@@ -1,0 +1,11 @@
+th{
+  border: 1px solid black;
+  }
+
+  .first{
+    font-size: 2em;
+  }
+  
+  tr:hover{
+    background-color: grey;
+  }

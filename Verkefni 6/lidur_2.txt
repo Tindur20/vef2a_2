@@ -1,0 +1,39 @@
+Pizza pöntun: crust type (orginal) toppings (cheese, pepperoni, garlic), status (cooking),
+customer (name, phone). Sýndu hvernig eftirfarandi pizza pöntun væri sett upp í :
+a) JSON.
+b) XML
+
+a)
+{
+	"Pizza":[	
+		{
+		"Crust":"Orginal",
+		"Toppings":"Cheese, Pepperoni, Garlic",
+		"Status":"Cooking",
+		"Customer":"Sigsteinn, 5518952",
+		}
+	]}
+
+b)
+
+<pizzas>
+	<pizza>
+		<p>Pizza info</p>
+		<crusts>
+			<crust>orginal</crust>
+		</crusts>
+		<toppings>
+			<topping>Cheese</topping>
+			<topping>Pepperoni</topping>
+			<topping>Garlic</topping>
+		</toppings>
+		<statuss>
+			<status>Cooking</status>
+		</statuss>
+	<p>Customer info</p>
+		<customers>
+			<customer>Sigsteinn</customer>
+			<customer>5518952</customer>
+		</customers>
+	</pizza>
+</pizzas>
