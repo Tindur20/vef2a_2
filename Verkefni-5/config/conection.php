@@ -3,7 +3,8 @@
 
 		$source = 'mysql:host=tsuts.tskoli.is;dbname=2811992349_Gg_Verkefni_5';
 		$user = '2811992349';
-		$password = 'mypassword';
+		//tókk passwordið úr hér.
+		$password = '';
 
 			$pdo = new PDO($source, $user, $password);
 			$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
