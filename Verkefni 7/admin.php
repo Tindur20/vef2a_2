@@ -10,7 +10,7 @@ if ($_SESSION['email']) {
 else {
   header('Location: index.php');
 }
-
+//það er villa hér skill ekki afh það er að koma
     $user = getUsername($conn, $email);
     echo "Hello " . $user['name'] . "<br>";
     echo "email : " . $email . "<br>";
